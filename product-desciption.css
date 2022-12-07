@@ -19,7 +19,7 @@
   align-items: center;
 }
 .wide-descript-container .descript-container .description-title h1 {
-  font-size: 5vw;
+  font-size: 5em;
 }
 .wide-descript-container .descript-container .description {
   gap: 4em;
