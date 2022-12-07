@@ -1,0 +1,233 @@
+@-webkit-keyframes slideBanner {
+  0% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  16% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  32% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  48% {
+    transform: translateX(-300vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  64% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  80% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  100% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+}
+@keyframes slideBanner {
+  0% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  16% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  32% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  48% {
+    transform: translateX(-300vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  64% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  80% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  100% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner .bannerClass {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-items: center;
+}
+.banner .bannerClass .banner-container {
+  width: 400vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0em;
+  -webkit-animation: slideBanner 40s ease-in-out infinite;
+          animation: slideBanner 40s ease-in-out infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.banner .bannerClass .banner-container .product1, .banner .bannerClass .banner-container .product2, .banner .bannerClass .banner-container .product3, .banner .bannerClass .banner-container .product4 {
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  background-image: linear-gradient(to left, rgb(156, 30, 30), #325);
+  width: 100vw;
+  height: 100vh;
+}
+.banner .bannerClass .banner-container .product1 ul, .banner .bannerClass .banner-container .product2 ul, .banner .bannerClass .banner-container .product3 ul, .banner .bannerClass .banner-container .product4 ul {
+  list-style: none;
+}
+.banner .bannerClass .banner-container .product1 ul img, .banner .bannerClass .banner-container .product2 ul img, .banner .bannerClass .banner-container .product3 ul img, .banner .bannerClass .banner-container .product4 ul img {
+  width: 50vw;
+}
+.banner .bannerClass .banner-container .product1 .productDetail, .banner .bannerClass .banner-container .product2 .productDetail, .banner .bannerClass .banner-container .product3 .productDetail, .banner .bannerClass .banner-container .product4 .productDetail {
+  width: 100%;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul, .banner .bannerClass .banner-container .product2 .productDetail ul, .banner .bannerClass .banner-container .product3 .productDetail ul, .banner .bannerClass .banner-container .product4 .productDetail ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5vw 5vw 5vw;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li, .banner .bannerClass .banner-container .product2 .productDetail ul li, .banner .bannerClass .banner-container .product3 .productDetail ul li, .banner .bannerClass .banner-container .product4 .productDetail ul li {
+  display: grid;
+  align-items: center;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li h1, .banner .bannerClass .banner-container .product2 .productDetail ul li h1, .banner .bannerClass .banner-container .product3 .productDetail ul li h1, .banner .bannerClass .banner-container .product4 .productDetail ul li h1 {
+  background-image: linear-gradient(rgb(248, 203, 78), #fff);
+  font-size: 4vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li p, .banner .bannerClass .banner-container .product2 .productDetail ul li p, .banner .bannerClass .banner-container .product3 .productDetail ul li p, .banner .bannerClass .banner-container .product4 .productDetail ul li p {
+  color: #fff;
+  font-size: 1vw;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li input, .banner .bannerClass .banner-container .product2 .productDetail ul li input, .banner .bannerClass .banner-container .product3 .productDetail ul li input, .banner .bannerClass .banner-container .product4 .productDetail ul li input {
+  background-image: linear-gradient(to right, rgb(248, 203, 78), #ccc);
+  height: 3vw;
+  width: 20vw;
+  font-size: 1vw;
+  color: #333;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .banner .bannerClass {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-items: center;
+  }
+  .banner .bannerClass .banner-container {
+    width: 400vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 0em;
+    -webkit-animation: slideBannera 40s ease-in-out infinite;
+            animation: slideBannera 40s ease-in-out infinite;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  .banner .bannerClass .banner-container .product1, .banner .bannerClass .banner-container .product2, .banner .bannerClass .banner-container .product3, .banner .bannerClass .banner-container .product4 {
+    grid-template-rows: 40vw 60vw;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    background-image: linear-gradient(to left, rgb(156, 30, 30), #325);
+    width: 100vw;
+    height: 100vh;
+  }
+  .banner .bannerClass .banner-container .product1 ul, .banner .bannerClass .banner-container .product2 ul, .banner .bannerClass .banner-container .product3 ul, .banner .bannerClass .banner-container .product4 ul {
+    list-style: none;
+  }
+  .banner .bannerClass .banner-container .product1 ul img, .banner .bannerClass .banner-container .product2 ul img, .banner .bannerClass .banner-container .product3 ul img, .banner .bannerClass .banner-container .product4 ul img {
+    width: 80vw;
+  }
+  .banner .bannerClass .banner-container .product1 .productDetail, .banner .bannerClass .banner-container .product2 .productDetail, .banner .bannerClass .banner-container .product3 .productDetail, .banner .bannerClass .banner-container .product4 .productDetail {
+    width: 100%;
+  }
+  .banner .bannerClass .banner-container .product1 .productDetail ul, .banner .bannerClass .banner-container .product2 .productDetail ul, .banner .bannerClass .banner-container .product3 .productDetail ul, .banner .bannerClass .banner-container .product4 .productDetail ul {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .banner .bannerClass .banner-container .product1 .productDetail ul li, .banner .bannerClass .banner-container .product2 .productDetail ul li, .banner .bannerClass .banner-container .product3 .productDetail ul li, .banner .bannerClass .banner-container .product4 .productDetail ul li {
+    display: grid;
+    align-items: center;
+  }
+  .banner .bannerClass .banner-container .product1 .productDetail ul li h1, .banner .bannerClass .banner-container .product2 .productDetail ul li h1, .banner .bannerClass .banner-container .product3 .productDetail ul li h1, .banner .bannerClass .banner-container .product4 .productDetail ul li h1 {
+    background-image: linear-gradient(rgb(248, 203, 78), #fff);
+    font-size: 10vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .banner .bannerClass .banner-container .product1 .productDetail ul li p, .banner .bannerClass .banner-container .product2 .productDetail ul li p, .banner .bannerClass .banner-container .product3 .productDetail ul li p, .banner .bannerClass .banner-container .product4 .productDetail ul li p {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5vw;
+  }
+  .banner .bannerClass .banner-container .product1 .productDetail ul li input, .banner .bannerClass .banner-container .product2 .productDetail ul li input, .banner .bannerClass .banner-container .product3 .productDetail ul li input, .banner .bannerClass .banner-container .product4 .productDetail ul li input {
+    background-image: linear-gradient(to right, rgb(248, 203, 78), #ccc);
+    height: 7vw;
+    width: 20vw;
+    font-size: 3vw;
+    color: #333;
+  }
+}/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,270 @@
+@keyframes slideBanner {
+    0% {
+        transform: translateX(0vw);
+        animation-delay: 2s;
+    }
+    16% {
+        transform: translateX(-100vw);
+        animation-delay: 2s;
+
+    }
+    32% {
+        transform: translateX(-200vw);
+        animation-delay: 2s;
+
+        
+    }
+    48% {
+        transform: translateX(-300vw);
+        animation-delay: 2s;
+
+        
+    }
+    64% {
+        transform: translateX(-200vw);
+        animation-delay: 2s;
+        
+    }
+    80% {
+        transform: translateX(-100vw);
+        animation-delay: 2s;
+
+    }
+    100% {
+        transform: translateX(0vw);
+        animation-delay: 2s;
+
+    }
+
+}
+
+
+
+
+
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .bannerClass{
+        position: relative;
+        width: 100%;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-items: center;
+        .banner-container {
+            width: 400vw;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height:100vh;
+            width: fit-content;
+            gap: 0em;
+            animation: slideBanner 40s ease-in-out infinite;
+            animation-delay: 4s;
+            .product1, .product2, .product3, .product4 {
+                grid-template-rows: 1fr ;
+                grid-template-columns: repeat(auto-fit, minmax(400px , 1fr));
+                justify-items: center;
+                align-items: center;
+                display: grid;
+                background-image: linear-gradient(to left ,rgb(156, 30, 30), #325);
+                width: 100vw;
+                height: 100vh;
+                ul {
+                    list-style: none;
+                    img {
+                        width: 50vw;
+                    }
+                }
+                .productDetail {
+                    width: 100%;
+                    ul {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 5vw 5vw 5vw;
+                        li {
+                            display: grid;
+                            align-items: center;
+                            h1 {
+                                background-image: linear-gradient( rgb(248, 203, 78) , #fff);
+                                font-size: 4vw;
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 1vw;
+                            }
+                            input {
+                                background-image: linear-gradient(to right , rgb(248, 203, 78) ,#ccc);
+                                height: 3vw;
+                                width: 20vw;
+                                font-size: 1vw;
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}   
+
+@media only screen and (max-width:800px) {
+    .banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .bannerClass{
+            position: relative;
+            width: 100%;
+            height:100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            justify-items: center;
+            .banner-container {
+                width: 400vw;
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                height:100vh;
+                width: fit-content;
+                gap: 0em;
+                animation: slideBannera 40s ease-in-out infinite;
+                animation-delay: 4s;    
+                .product1, .product2, .product3, .product4 {
+                    grid-template-rows:40vw 60vw  ;
+                    grid-template-columns: repeat(auto-fit, minmax(400px , 1fr));
+                    justify-items: center;
+                    align-items: center;
+                    display: grid;
+                    background-image: linear-gradient(to left ,rgb(156, 30, 30), #325);
+                    width: 100vw;
+                    height: 100vh;
+                    ul {
+                        list-style: none;
+                        img {
+                            width: 80vw;
+                        }
+                    }
+                    .productDetail {
+                        width: 100%;
+                        ul {
+                            display: grid;
+                            place-items: center;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr 1fr 1fr;
+                            li {
+                                display: grid;
+                                align-items: center;
+                                h1 {
+                                    background-image: linear-gradient( rgb(248, 203, 78) , #fff);
+                                    font-size: 10vw;
+                                    -webkit-text-fill-color: transparent;
+                                    -webkit-background-clip: text;
+                                }
+                                p {
+                                    text-align: center;
+                                    color: #fff;
+                                    font-size: 2.5vw;
+                                }
+                                input {
+                                    background-image: linear-gradient(to right , rgb(248, 203, 78) ,#ccc);
+                                    height: 7vw;
+                                    width: 20vw;
+                                    font-size: 3vw;
+                                    color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

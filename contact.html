@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="contact-content.css">
+    <title>Document</title>
+</head>
+<body>
+    <header data-aos="fade-down">
+        <div class="header-container">
+            <div class="header-logo" data-aos="fade-right" data-aos-delay="400" style="display: flex;">
+                <img src="/image/logo.png" width="50px" alt="">
+                <h1>KL0CKERS</h1>
+            </div>
+            <div class="header-links" data-aos="fade-left" data-aos-delay="450">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="/about-page.html">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li id="searchBtn" class="searchBtn">
+                        <div id="imgCom" >
+                            <div class="imageSliderBtn" id="imageSliderBtn">
+                                <img id="positive" src="/image/search-image/icons8-search-50.png" width="30px" alt="">
+                                <img id="negative" src="/image/icons8-macos-close-32.png" width="27.5px" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-bar" id="searchBody">
+            <div class="input">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="social-media">
+                    <ul>
+                        <li id="icon"><a href=""><img src="image/contact/icons8-facebook-50(1).png" alt=""></a></li>
+                        <li id="icon1"><a href=""><img src="image/contact/icons8-instagram-50.png" alt=""></a></li>
+                        <li id="icon2"><a href=""><img src="image/contact/icons8-telegram-app-50.png" alt=""></a></li>
+                        <li id="icon3"><a href=""><img src="image/contact/icons8-twitter-50.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="trad-contact">
+                    <ul>
+                        <li><span>Mobile Phone : </span><a href="">+63 991 331 221</a></li>
+                        <li><span>Telephone : </span><a href=""> (02) 7798 4600</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="contact-animation.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
